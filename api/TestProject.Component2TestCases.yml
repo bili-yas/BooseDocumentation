@@ -1,0 +1,1061 @@
+### YamlMime:ManagedReference
+items:
+- uid: TestProject.Component2TestCases
+  commentId: T:TestProject.Component2TestCases
+  id: Component2TestCases
+  parent: TestProject
+  children:
+  - TestProject.Component2TestCases.Setup
+  - TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+  - TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+  - TestProject.Component2TestCases.Test_Invalid_If_Operation
+  - TestProject.Component2TestCases.Test_Invalid_Method_Operation
+  - TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException
+  - TestProject.Component2TestCases.Test_SetAndGetValue
+  - TestProject.Component2TestCases.Test_SetAndGetValue_For_Real
+  - TestProject.Component2TestCases.Test_SetAndGetVariableName
+  - TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real
+  - TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable
+  - TestProject.Component2TestCases.Test_Valid_For_Operation
+  - TestProject.Component2TestCases.Test_Valid_If_Operation
+  - TestProject.Component2TestCases.Test_Valid_Method_Operation
+  - TestProject.Component2TestCases.Test_Valid_While_Operation
+  - TestProject.Component2TestCases.Test_While_Condition_Not_Met
+  langs:
+  - csharp
+  - vb
+  name: Component2TestCases
+  nameWithType: Component2TestCases
+  fullName: TestProject.Component2TestCases
+  type: Class
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Component2TestCases
+    path: TestProject/Component2TestCases.cs
+    startLine: 11
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: >-
+    Test class for Component 2 functionalities, including AppInt, AppReal, AppArray, 
+
+    and operations like if, while, for, method call, and exception handling.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class Component2TestCases
+    content.vb: >-
+      <TestClass>
+
+      Public Class Component2TestCases
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Setup
+  commentId: M:TestProject.Component2TestCases.Setup
+  id: Setup
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: Component2TestCases.Setup()
+  fullName: TestProject.Component2TestCases.Setup()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Setup
+    path: TestProject/Component2TestCases.cs
+    startLine: 22
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Initializes the required objects for testing.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: TestProject.Component2TestCases.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_SetAndGetVariableName
+  commentId: M:TestProject.Component2TestCases.Test_SetAndGetVariableName
+  id: Test_SetAndGetVariableName
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_SetAndGetVariableName()
+  nameWithType: Component2TestCases.Test_SetAndGetVariableName()
+  fullName: TestProject.Component2TestCases.Test_SetAndGetVariableName()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_SetAndGetVariableName
+    path: TestProject/Component2TestCases.cs
+    startLine: 36
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests setting and getting the variable name for an integer variable.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetAndGetVariableName()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetAndGetVariableName()
+  overload: TestProject.Component2TestCases.Test_SetAndGetVariableName*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_SetAndGetValue
+  commentId: M:TestProject.Component2TestCases.Test_SetAndGetValue
+  id: Test_SetAndGetValue
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_SetAndGetValue()
+  nameWithType: Component2TestCases.Test_SetAndGetValue()
+  fullName: TestProject.Component2TestCases.Test_SetAndGetValue()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_SetAndGetValue
+    path: TestProject/Component2TestCases.cs
+    startLine: 54
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests setting and getting the value of an integer variable.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetAndGetValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetAndGetValue()
+  overload: TestProject.Component2TestCases.Test_SetAndGetValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real
+  commentId: M:TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real
+  id: Test_SetAndGetVariableName_For_Real
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_SetAndGetVariableName_For_Real()
+  nameWithType: Component2TestCases.Test_SetAndGetVariableName_For_Real()
+  fullName: TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_SetAndGetVariableName_For_Real
+    path: TestProject/Component2TestCases.cs
+    startLine: 75
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests setting and getting the variable name for a real (floating-point) variable.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetAndGetVariableName_For_Real()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetAndGetVariableName_For_Real()
+  overload: TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_SetAndGetValue_For_Real
+  commentId: M:TestProject.Component2TestCases.Test_SetAndGetValue_For_Real
+  id: Test_SetAndGetValue_For_Real
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_SetAndGetValue_For_Real()
+  nameWithType: Component2TestCases.Test_SetAndGetValue_For_Real()
+  fullName: TestProject.Component2TestCases.Test_SetAndGetValue_For_Real()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_SetAndGetValue_For_Real
+    path: TestProject/Component2TestCases.cs
+    startLine: 93
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests setting and getting the value of a real (floating-point) variable.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetAndGetValue_For_Real()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetAndGetValue_For_Real()
+  overload: TestProject.Component2TestCases.Test_SetAndGetValue_For_Real*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable
+  commentId: M:TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable
+  id: Test_ValidArray_UpdatesVariable
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_ValidArray_UpdatesVariable()
+  nameWithType: Component2TestCases.Test_ValidArray_UpdatesVariable()
+  fullName: TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_ValidArray_UpdatesVariable
+    path: TestProject/Component2TestCases.cs
+    startLine: 111
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests a valid array operation by updating a specific index and retrieving its value.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_ValidArray_UpdatesVariable()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_ValidArray_UpdatesVariable()
+  overload: TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+  commentId: M:TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+  id: Test_InvalidDatatype_Throws_StoredProgramException
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_InvalidDatatype_Throws_StoredProgramException()
+  nameWithType: Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException()
+  fullName: TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_InvalidDatatype_Throws_StoredProgramException
+    path: TestProject/Component2TestCases.cs
+    startLine: 138
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests invalid data type for array operation, expecting a StoredProgramException.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(StoredProgramException), "StoredProgram Exception occurred.")]
+
+      public void Test_InvalidDatatype_Throws_StoredProgramException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(StoredProgramException), "StoredProgram Exception occurred.")>
+
+      Public Sub Test_InvalidDatatype_Throws_StoredProgramException()
+  overload: TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.StoredProgramException
+    - type: System.String
+      value: StoredProgram Exception occurred.
+- uid: TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException
+  commentId: M:TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException
+  id: Test_NoArraySize_Throws_ParserException
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_NoArraySize_Throws_ParserException()
+  nameWithType: Component2TestCases.Test_NoArraySize_Throws_ParserException()
+  fullName: TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_NoArraySize_Throws_ParserException
+    path: TestProject/Component2TestCases.cs
+    startLine: 162
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests missing array size declaration, expecting a ParserException.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(ParserException), "Expected Parser Exception occurred.")]
+
+      public void Test_NoArraySize_Throws_ParserException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(ParserException), "Expected Parser Exception occurred.")>
+
+      Public Sub Test_NoArraySize_Throws_ParserException()
+  overload: TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.ParserException
+    - type: System.String
+      value: Expected Parser Exception occurred.
+- uid: TestProject.Component2TestCases.Test_Valid_If_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Valid_If_Operation
+  id: Test_Valid_If_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Valid_If_Operation()
+  nameWithType: Component2TestCases.Test_Valid_If_Operation()
+  fullName: TestProject.Component2TestCases.Test_Valid_If_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Valid_If_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 185
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests a valid 'if' operation where the condition is met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_Valid_If_Operation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_Valid_If_Operation()
+  overload: TestProject.Component2TestCases.Test_Valid_If_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_Invalid_If_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Invalid_If_Operation
+  id: Test_Invalid_If_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Invalid_If_Operation()
+  nameWithType: Component2TestCases.Test_Invalid_If_Operation()
+  fullName: TestProject.Component2TestCases.Test_Invalid_If_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Invalid_If_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 215
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an invalid 'if' operation where the condition is not met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_Invalid_If_Operation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_Invalid_If_Operation()
+  overload: TestProject.Component2TestCases.Test_Invalid_If_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_Valid_While_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Valid_While_Operation
+  id: Test_Valid_While_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Valid_While_Operation()
+  nameWithType: Component2TestCases.Test_Valid_While_Operation()
+  fullName: TestProject.Component2TestCases.Test_Valid_While_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Valid_While_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 242
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an valid 'while' operation where the condition is met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_Valid_While_Operation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_Valid_While_Operation()
+  overload: TestProject.Component2TestCases.Test_Valid_While_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_While_Condition_Not_Met
+  commentId: M:TestProject.Component2TestCases.Test_While_Condition_Not_Met
+  id: Test_While_Condition_Not_Met
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_While_Condition_Not_Met()
+  nameWithType: Component2TestCases.Test_While_Condition_Not_Met()
+  fullName: TestProject.Component2TestCases.Test_While_Condition_Not_Met()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_While_Condition_Not_Met
+    path: TestProject/Component2TestCases.cs
+    startLine: 268
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an invalid 'while' operation where the condition is not met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_While_Condition_Not_Met()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_While_Condition_Not_Met()
+  overload: TestProject.Component2TestCases.Test_While_Condition_Not_Met*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_Valid_For_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Valid_For_Operation
+  id: Test_Valid_For_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Valid_For_Operation()
+  nameWithType: Component2TestCases.Test_Valid_For_Operation()
+  fullName: TestProject.Component2TestCases.Test_Valid_For_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Valid_For_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 294
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an valid 'for' operation where the condition is met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_Valid_For_Operation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_Valid_For_Operation()
+  overload: TestProject.Component2TestCases.Test_Valid_For_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+  commentId: M:TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+  id: Test_For_Loop_No_Execution_With_Invalid_Start_End
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_For_Loop_No_Execution_With_Invalid_Start_End()
+  nameWithType: Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End()
+  fullName: TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_For_Loop_No_Execution_With_Invalid_Start_End
+    path: TestProject/Component2TestCases.cs
+    startLine: 319
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an invalid 'for' operation where the condition is not met.
+  example: []
+  syntax:
+    content: >-
+      [ExpectedException(typeof(StoredProgramException), "Infinite loop.")]
+
+      [TestMethod]
+
+      public void Test_For_Loop_No_Execution_With_Invalid_Start_End()
+    content.vb: >-
+      <ExpectedException(GetType(StoredProgramException), "Infinite loop.")>
+
+      <TestMethod>
+
+      Public Sub Test_For_Loop_No_Execution_With_Invalid_Start_End()
+  overload: TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.StoredProgramException
+    - type: System.String
+      value: Infinite loop.
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_Valid_Method_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Valid_Method_Operation
+  id: Test_Valid_Method_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Valid_Method_Operation()
+  nameWithType: Component2TestCases.Test_Valid_Method_Operation()
+  fullName: TestProject.Component2TestCases.Test_Valid_Method_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Valid_Method_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 343
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an invalid 'method' operation where the condition is met.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_Valid_Method_Operation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_Valid_Method_Operation()
+  overload: TestProject.Component2TestCases.Test_Valid_Method_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Component2TestCases.Test_Invalid_Method_Operation
+  commentId: M:TestProject.Component2TestCases.Test_Invalid_Method_Operation
+  id: Test_Invalid_Method_Operation
+  parent: TestProject.Component2TestCases
+  langs:
+  - csharp
+  - vb
+  name: Test_Invalid_Method_Operation()
+  nameWithType: Component2TestCases.Test_Invalid_Method_Operation()
+  fullName: TestProject.Component2TestCases.Test_Invalid_Method_Operation()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Component2TestCases.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test_Invalid_Method_Operation
+    path: TestProject/Component2TestCases.cs
+    startLine: 370
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests an invalid 'method' operation where the condition is not met.
+  example: []
+  syntax:
+    content: >-
+      [ExpectedException(typeof(StoredProgramException), "")]
+
+      [TestMethod]
+
+      public void Test_Invalid_Method_Operation()
+    content.vb: >-
+      <ExpectedException(GetType(StoredProgramException), "")>
+
+      <TestMethod>
+
+      Public Sub Test_Invalid_Method_Operation()
+  overload: TestProject.Component2TestCases.Test_Invalid_Method_Operation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.StoredProgramException
+    - type: System.String
+      value: ''
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: TestProject
+  commentId: N:TestProject
+  href: TestProject.html
+  name: TestProject
+  nameWithType: TestProject
+  fullName: TestProject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TestProject.Component2TestCases.Setup*
+  commentId: Overload:TestProject.Component2TestCases.Setup
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Setup
+  name: Setup
+  nameWithType: Component2TestCases.Setup
+  fullName: TestProject.Component2TestCases.Setup
+- uid: TestProject.Component2TestCases.Test_SetAndGetVariableName*
+  commentId: Overload:TestProject.Component2TestCases.Test_SetAndGetVariableName
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_SetAndGetVariableName
+  name: Test_SetAndGetVariableName
+  nameWithType: Component2TestCases.Test_SetAndGetVariableName
+  fullName: TestProject.Component2TestCases.Test_SetAndGetVariableName
+- uid: TestProject.Component2TestCases.Test_SetAndGetValue*
+  commentId: Overload:TestProject.Component2TestCases.Test_SetAndGetValue
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_SetAndGetValue
+  name: Test_SetAndGetValue
+  nameWithType: Component2TestCases.Test_SetAndGetValue
+  fullName: TestProject.Component2TestCases.Test_SetAndGetValue
+- uid: TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real*
+  commentId: Overload:TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_SetAndGetVariableName_For_Real
+  name: Test_SetAndGetVariableName_For_Real
+  nameWithType: Component2TestCases.Test_SetAndGetVariableName_For_Real
+  fullName: TestProject.Component2TestCases.Test_SetAndGetVariableName_For_Real
+- uid: TestProject.Component2TestCases.Test_SetAndGetValue_For_Real*
+  commentId: Overload:TestProject.Component2TestCases.Test_SetAndGetValue_For_Real
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_SetAndGetValue_For_Real
+  name: Test_SetAndGetValue_For_Real
+  nameWithType: Component2TestCases.Test_SetAndGetValue_For_Real
+  fullName: TestProject.Component2TestCases.Test_SetAndGetValue_For_Real
+- uid: TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable*
+  commentId: Overload:TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_ValidArray_UpdatesVariable
+  name: Test_ValidArray_UpdatesVariable
+  nameWithType: Component2TestCases.Test_ValidArray_UpdatesVariable
+  fullName: TestProject.Component2TestCases.Test_ValidArray_UpdatesVariable
+- uid: TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException*
+  commentId: Overload:TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_InvalidDatatype_Throws_StoredProgramException
+  name: Test_InvalidDatatype_Throws_StoredProgramException
+  nameWithType: Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+  fullName: TestProject.Component2TestCases.Test_InvalidDatatype_Throws_StoredProgramException
+- uid: TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException*
+  commentId: Overload:TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_NoArraySize_Throws_ParserException
+  name: Test_NoArraySize_Throws_ParserException
+  nameWithType: Component2TestCases.Test_NoArraySize_Throws_ParserException
+  fullName: TestProject.Component2TestCases.Test_NoArraySize_Throws_ParserException
+- uid: TestProject.Component2TestCases.Test_Valid_If_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Valid_If_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Valid_If_Operation
+  name: Test_Valid_If_Operation
+  nameWithType: Component2TestCases.Test_Valid_If_Operation
+  fullName: TestProject.Component2TestCases.Test_Valid_If_Operation
+- uid: TestProject.Component2TestCases.Test_Invalid_If_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Invalid_If_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Invalid_If_Operation
+  name: Test_Invalid_If_Operation
+  nameWithType: Component2TestCases.Test_Invalid_If_Operation
+  fullName: TestProject.Component2TestCases.Test_Invalid_If_Operation
+- uid: TestProject.Component2TestCases.Test_Valid_While_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Valid_While_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Valid_While_Operation
+  name: Test_Valid_While_Operation
+  nameWithType: Component2TestCases.Test_Valid_While_Operation
+  fullName: TestProject.Component2TestCases.Test_Valid_While_Operation
+- uid: TestProject.Component2TestCases.Test_While_Condition_Not_Met*
+  commentId: Overload:TestProject.Component2TestCases.Test_While_Condition_Not_Met
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_While_Condition_Not_Met
+  name: Test_While_Condition_Not_Met
+  nameWithType: Component2TestCases.Test_While_Condition_Not_Met
+  fullName: TestProject.Component2TestCases.Test_While_Condition_Not_Met
+- uid: TestProject.Component2TestCases.Test_Valid_For_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Valid_For_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Valid_For_Operation
+  name: Test_Valid_For_Operation
+  nameWithType: Component2TestCases.Test_Valid_For_Operation
+  fullName: TestProject.Component2TestCases.Test_Valid_For_Operation
+- uid: TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End*
+  commentId: Overload:TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_For_Loop_No_Execution_With_Invalid_Start_End
+  name: Test_For_Loop_No_Execution_With_Invalid_Start_End
+  nameWithType: Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+  fullName: TestProject.Component2TestCases.Test_For_Loop_No_Execution_With_Invalid_Start_End
+- uid: TestProject.Component2TestCases.Test_Valid_Method_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Valid_Method_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Valid_Method_Operation
+  name: Test_Valid_Method_Operation
+  nameWithType: Component2TestCases.Test_Valid_Method_Operation
+  fullName: TestProject.Component2TestCases.Test_Valid_Method_Operation
+- uid: TestProject.Component2TestCases.Test_Invalid_Method_Operation*
+  commentId: Overload:TestProject.Component2TestCases.Test_Invalid_Method_Operation
+  href: TestProject.Component2TestCases.html#TestProject_Component2TestCases_Test_Invalid_Method_Operation
+  name: Test_Invalid_Method_Operation
+  nameWithType: Component2TestCases.Test_Invalid_Method_Operation
+  fullName: TestProject.Component2TestCases.Test_Invalid_Method_Operation

@@ -1,0 +1,973 @@
+### YamlMime:ManagedReference
+items:
+- uid: TestProject.Test1
+  commentId: T:TestProject.Test1
+  id: Test1
+  parent: TestProject
+  children:
+  - TestProject.Test1.Circle_InvalidRadius_ThrowsException
+  - TestProject.Test1.Circle_ValidRadius_Draw
+  - TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException
+  - TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+  - TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition
+  - TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException
+  - TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+  - TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition
+  - TestProject.Test1.MultiLineCommand
+  - TestProject.Test1.Rectangle_NegativeSides_ThrowsException
+  - TestProject.Test1.Rectangle_ValidSides_Draw
+  - TestProject.Test1.Setup
+  - TestProject.Test1.Write_InvalidParameters_ThrowsException
+  - TestProject.Test1.Write_ValidParameters
+  langs:
+  - csharp
+  - vb
+  name: Test1
+  nameWithType: Test1
+  fullName: TestProject.Test1
+  type: Class
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Test1
+    path: TestProject/Test1.cs
+    startLine: 9
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: >-
+    Provides unit tests for the AppCanvas class functionality.
+
+    Tests cover methods related to movement, drawing, and shape creation to ensure proper validation and behavior.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class Test1
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class Test1
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.Setup
+  commentId: M:TestProject.Test1.Setup
+  id: Setup
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: Test1.Setup()
+  fullName: TestProject.Test1.Setup()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Setup
+    path: TestProject/Test1.cs
+    startLine: 18
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Initializes a new instance of the canvas and sets default properties before each test.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: TestProject.Test1.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition
+  commentId: M:TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition
+  id: MoveTo_ValidCoordinates_UpdatesPosition
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_ValidCoordinates_UpdatesPosition()
+  nameWithType: Test1.MoveTo_ValidCoordinates_UpdatesPosition()
+  fullName: TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: MoveTo_ValidCoordinates_UpdatesPosition
+    path: TestProject/Test1.cs
+    startLine: 30
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.MoveTo() method correctly updates the canvas position for valid coordinates.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MoveTo_ValidCoordinates_UpdatesPosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MoveTo_ValidCoordinates_UpdatesPosition()
+  overload: TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException
+  commentId: M:TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException
+  id: MoveTo_NegativeCoordinates_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_NegativeCoordinates_ThrowsException()
+  nameWithType: Test1.MoveTo_NegativeCoordinates_ThrowsException()
+  fullName: TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: MoveTo_NegativeCoordinates_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 49
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.MoveTo() method throws a CanvasException for negative coordinates.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException), "Negative coordinates given.")]
+
+      public void MoveTo_NegativeCoordinates_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException), "Negative coordinates given.")>
+
+      Public Sub MoveTo_NegativeCoordinates_ThrowsException()
+  overload: TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+    - type: System.String
+      value: Negative coordinates given.
+- uid: TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+  commentId: M:TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+  id: MoveTo_OutOfBoundsCoordinates_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_OutOfBoundsCoordinates_ThrowsException()
+  nameWithType: Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException()
+  fullName: TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: MoveTo_OutOfBoundsCoordinates_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 65
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.MoveTo() method throws a CanvasException for coordinates outside the canvas bounds.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException), "OutOfBound coordinates.")]
+
+      public void MoveTo_OutOfBoundsCoordinates_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException), "OutOfBound coordinates.")>
+
+      Public Sub MoveTo_OutOfBoundsCoordinates_ThrowsException()
+  overload: TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+    - type: System.String
+      value: OutOfBound coordinates.
+- uid: TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition
+  commentId: M:TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition
+  id: DrawTo_ValidCoordinates_UpdatesPosition
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_ValidCoordinates_UpdatesPosition()
+  nameWithType: Test1.DrawTo_ValidCoordinates_UpdatesPosition()
+  fullName: TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: DrawTo_ValidCoordinates_UpdatesPosition
+    path: TestProject/Test1.cs
+    startLine: 80
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.DrawTo() method correctly updates the canvas position for valid coordinates.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void DrawTo_ValidCoordinates_UpdatesPosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub DrawTo_ValidCoordinates_UpdatesPosition()
+  overload: TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException
+  commentId: M:TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException
+  id: DrawTo_NegativeCoordinates_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_NegativeCoordinates_ThrowsException()
+  nameWithType: Test1.DrawTo_NegativeCoordinates_ThrowsException()
+  fullName: TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: DrawTo_NegativeCoordinates_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 98
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.DrawTo() method throws a CanvasException for negative coordinates.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException), "Negative coordinates given.")]
+
+      public void DrawTo_NegativeCoordinates_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException), "Negative coordinates given.")>
+
+      Public Sub DrawTo_NegativeCoordinates_ThrowsException()
+  overload: TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+    - type: System.String
+      value: Negative coordinates given.
+- uid: TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+  commentId: M:TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+  id: DrawTo_OutOfBoundsCoordinates_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_OutOfBoundsCoordinates_ThrowsException()
+  nameWithType: Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException()
+  fullName: TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: DrawTo_OutOfBoundsCoordinates_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 113
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.DrawTo90 method throws a CanvasException for coordinates outside the canvas bounds.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException), "Out of Bound coordinates given.")]
+
+      public void DrawTo_OutOfBoundsCoordinates_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException), "Out of Bound coordinates given.")>
+
+      Public Sub DrawTo_OutOfBoundsCoordinates_ThrowsException()
+  overload: TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+    - type: System.String
+      value: Out of Bound coordinates given.
+- uid: TestProject.Test1.Circle_ValidRadius_Draw
+  commentId: M:TestProject.Test1.Circle_ValidRadius_Draw
+  id: Circle_ValidRadius_Draw
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Circle_ValidRadius_Draw()
+  nameWithType: Test1.Circle_ValidRadius_Draw()
+  fullName: TestProject.Test1.Circle_ValidRadius_Draw()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Circle_ValidRadius_Draw
+    path: TestProject/Test1.cs
+    startLine: 129
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.Circle() method successfully draws a circle with a valid radius.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Circle_ValidRadius_Draw()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Circle_ValidRadius_Draw()
+  overload: TestProject.Test1.Circle_ValidRadius_Draw*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.Circle_InvalidRadius_ThrowsException
+  commentId: M:TestProject.Test1.Circle_InvalidRadius_ThrowsException
+  id: Circle_InvalidRadius_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Circle_InvalidRadius_ThrowsException()
+  nameWithType: Test1.Circle_InvalidRadius_ThrowsException()
+  fullName: TestProject.Test1.Circle_InvalidRadius_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Circle_InvalidRadius_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 151
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.Circle() method throws a CanvasException for an invalid (negative) radius.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException))]
+
+      public void Circle_InvalidRadius_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException))>
+
+      Public Sub Circle_InvalidRadius_ThrowsException()
+  overload: TestProject.Test1.Circle_InvalidRadius_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+- uid: TestProject.Test1.Rectangle_ValidSides_Draw
+  commentId: M:TestProject.Test1.Rectangle_ValidSides_Draw
+  id: Rectangle_ValidSides_Draw
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Rectangle_ValidSides_Draw()
+  nameWithType: Test1.Rectangle_ValidSides_Draw()
+  fullName: TestProject.Test1.Rectangle_ValidSides_Draw()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Rectangle_ValidSides_Draw
+    path: TestProject/Test1.cs
+    startLine: 168
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.Rect() method successfully draws a rectangle with valid dimensions.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Rectangle_ValidSides_Draw()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Rectangle_ValidSides_Draw()
+  overload: TestProject.Test1.Rectangle_ValidSides_Draw*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.Rectangle_NegativeSides_ThrowsException
+  commentId: M:TestProject.Test1.Rectangle_NegativeSides_ThrowsException
+  id: Rectangle_NegativeSides_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Rectangle_NegativeSides_ThrowsException()
+  nameWithType: Test1.Rectangle_NegativeSides_ThrowsException()
+  fullName: TestProject.Test1.Rectangle_NegativeSides_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Rectangle_NegativeSides_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 191
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests that the AppCanvas.Rect() method throws a CanvasException for invalid (negative) dimensions.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException))]
+
+      public void Rectangle_NegativeSides_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException))>
+
+      Public Sub Rectangle_NegativeSides_ThrowsException()
+  overload: TestProject.Test1.Rectangle_NegativeSides_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+- uid: TestProject.Test1.Write_ValidParameters
+  commentId: M:TestProject.Test1.Write_ValidParameters
+  id: Write_ValidParameters
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Write_ValidParameters()
+  nameWithType: Test1.Write_ValidParameters()
+  fullName: TestProject.Test1.Write_ValidParameters()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Write_ValidParameters
+    path: TestProject/Test1.cs
+    startLine: 207
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Test method for valid parameters for write command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Write_ValidParameters()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Write_ValidParameters()
+  overload: TestProject.Test1.Write_ValidParameters*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: TestProject.Test1.Write_InvalidParameters_ThrowsException
+  commentId: M:TestProject.Test1.Write_InvalidParameters_ThrowsException
+  id: Write_InvalidParameters_ThrowsException
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: Write_InvalidParameters_ThrowsException()
+  nameWithType: Test1.Write_InvalidParameters_ThrowsException()
+  fullName: TestProject.Test1.Write_InvalidParameters_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: Write_InvalidParameters_ThrowsException
+    path: TestProject/Test1.cs
+    startLine: 228
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests for the CanvasException for empty parameter passed for write command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CanvasException))]
+
+      public void Write_InvalidParameters_ThrowsException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CanvasException))>
+
+      Public Sub Write_InvalidParameters_ThrowsException()
+  overload: TestProject.Test1.Write_InvalidParameters_ThrowsException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CanvasException
+- uid: TestProject.Test1.MultiLineCommand
+  commentId: M:TestProject.Test1.MultiLineCommand
+  id: MultiLineCommand
+  parent: TestProject.Test1
+  langs:
+  - csharp
+  - vb
+  name: MultiLineCommand()
+  nameWithType: Test1.MultiLineCommand()
+  fullName: TestProject.Test1.MultiLineCommand()
+  type: Method
+  source:
+    remote:
+      path: BiliyasMaharjan-ASE-Assignment/TestProject/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bili-yas.git
+    id: MultiLineCommand
+    path: TestProject/Test1.cs
+    startLine: 243
+  assemblies:
+  - TestProject
+  namespace: TestProject
+  summary: Tests moveto, drawto, circle, rect, write methods with valid parameters.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MultiLineCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MultiLineCommand()
+  overload: TestProject.Test1.MultiLineCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: TestProject
+  commentId: N:TestProject
+  href: TestProject.html
+  name: TestProject
+  nameWithType: TestProject
+  fullName: TestProject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TestProject.Test1.Setup*
+  commentId: Overload:TestProject.Test1.Setup
+  href: TestProject.Test1.html#TestProject_Test1_Setup
+  name: Setup
+  nameWithType: Test1.Setup
+  fullName: TestProject.Test1.Setup
+- uid: TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition*
+  commentId: Overload:TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition
+  href: TestProject.Test1.html#TestProject_Test1_MoveTo_ValidCoordinates_UpdatesPosition
+  name: MoveTo_ValidCoordinates_UpdatesPosition
+  nameWithType: Test1.MoveTo_ValidCoordinates_UpdatesPosition
+  fullName: TestProject.Test1.MoveTo_ValidCoordinates_UpdatesPosition
+- uid: TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException*
+  commentId: Overload:TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_MoveTo_NegativeCoordinates_ThrowsException
+  name: MoveTo_NegativeCoordinates_ThrowsException
+  nameWithType: Test1.MoveTo_NegativeCoordinates_ThrowsException
+  fullName: TestProject.Test1.MoveTo_NegativeCoordinates_ThrowsException
+- uid: TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException*
+  commentId: Overload:TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_MoveTo_OutOfBoundsCoordinates_ThrowsException
+  name: MoveTo_OutOfBoundsCoordinates_ThrowsException
+  nameWithType: Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+  fullName: TestProject.Test1.MoveTo_OutOfBoundsCoordinates_ThrowsException
+- uid: TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition*
+  commentId: Overload:TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition
+  href: TestProject.Test1.html#TestProject_Test1_DrawTo_ValidCoordinates_UpdatesPosition
+  name: DrawTo_ValidCoordinates_UpdatesPosition
+  nameWithType: Test1.DrawTo_ValidCoordinates_UpdatesPosition
+  fullName: TestProject.Test1.DrawTo_ValidCoordinates_UpdatesPosition
+- uid: TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException*
+  commentId: Overload:TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_DrawTo_NegativeCoordinates_ThrowsException
+  name: DrawTo_NegativeCoordinates_ThrowsException
+  nameWithType: Test1.DrawTo_NegativeCoordinates_ThrowsException
+  fullName: TestProject.Test1.DrawTo_NegativeCoordinates_ThrowsException
+- uid: TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException*
+  commentId: Overload:TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_DrawTo_OutOfBoundsCoordinates_ThrowsException
+  name: DrawTo_OutOfBoundsCoordinates_ThrowsException
+  nameWithType: Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+  fullName: TestProject.Test1.DrawTo_OutOfBoundsCoordinates_ThrowsException
+- uid: TestProject.Test1.Circle_ValidRadius_Draw*
+  commentId: Overload:TestProject.Test1.Circle_ValidRadius_Draw
+  href: TestProject.Test1.html#TestProject_Test1_Circle_ValidRadius_Draw
+  name: Circle_ValidRadius_Draw
+  nameWithType: Test1.Circle_ValidRadius_Draw
+  fullName: TestProject.Test1.Circle_ValidRadius_Draw
+- uid: TestProject.Test1.Circle_InvalidRadius_ThrowsException*
+  commentId: Overload:TestProject.Test1.Circle_InvalidRadius_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_Circle_InvalidRadius_ThrowsException
+  name: Circle_InvalidRadius_ThrowsException
+  nameWithType: Test1.Circle_InvalidRadius_ThrowsException
+  fullName: TestProject.Test1.Circle_InvalidRadius_ThrowsException
+- uid: TestProject.Test1.Rectangle_ValidSides_Draw*
+  commentId: Overload:TestProject.Test1.Rectangle_ValidSides_Draw
+  href: TestProject.Test1.html#TestProject_Test1_Rectangle_ValidSides_Draw
+  name: Rectangle_ValidSides_Draw
+  nameWithType: Test1.Rectangle_ValidSides_Draw
+  fullName: TestProject.Test1.Rectangle_ValidSides_Draw
+- uid: TestProject.Test1.Rectangle_NegativeSides_ThrowsException*
+  commentId: Overload:TestProject.Test1.Rectangle_NegativeSides_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_Rectangle_NegativeSides_ThrowsException
+  name: Rectangle_NegativeSides_ThrowsException
+  nameWithType: Test1.Rectangle_NegativeSides_ThrowsException
+  fullName: TestProject.Test1.Rectangle_NegativeSides_ThrowsException
+- uid: TestProject.Test1.Write_ValidParameters*
+  commentId: Overload:TestProject.Test1.Write_ValidParameters
+  href: TestProject.Test1.html#TestProject_Test1_Write_ValidParameters
+  name: Write_ValidParameters
+  nameWithType: Test1.Write_ValidParameters
+  fullName: TestProject.Test1.Write_ValidParameters
+- uid: TestProject.Test1.Write_InvalidParameters_ThrowsException*
+  commentId: Overload:TestProject.Test1.Write_InvalidParameters_ThrowsException
+  href: TestProject.Test1.html#TestProject_Test1_Write_InvalidParameters_ThrowsException
+  name: Write_InvalidParameters_ThrowsException
+  nameWithType: Test1.Write_InvalidParameters_ThrowsException
+  fullName: TestProject.Test1.Write_InvalidParameters_ThrowsException
+- uid: TestProject.Test1.MultiLineCommand*
+  commentId: Overload:TestProject.Test1.MultiLineCommand
+  href: TestProject.Test1.html#TestProject_Test1_MultiLineCommand
+  name: MultiLineCommand
+  nameWithType: Test1.MultiLineCommand
+  fullName: TestProject.Test1.MultiLineCommand
